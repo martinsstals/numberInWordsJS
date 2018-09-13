@@ -4,7 +4,14 @@ function numberInWords(number){
     if(number >=1 || number <= 10){
         ret = ones[parseInt(number)-1];
     }
-
+    if(number === 11)
+    {
+        ret     = "eleven";
+    }
+    if(!ret)
+    {
+        ret = number;
+    }
     return ret;
 }
 function numberInWordsAlert(number){
